@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <td *ng-for="#key of keys">
+          {{key}}
+      </td>
+    </tr>
+  </thead>
+  <tbody *ng-if="funds">
+    <tr *ng-for="#fund of funds">
+      <td *ng-for="#key of keys">
+        {{fund[key]}}
+      </td>
+    </tr>
+  </tbody>
+</table>

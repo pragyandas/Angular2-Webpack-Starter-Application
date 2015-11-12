@@ -1,0 +1,6 @@
+<ul *ng-if="companies">
+  <li *ng-for="#company of companies" (click)="getFunds(company)" style="cursor:pointer;">
+    {{company.name}}
+    <fund *ng-if="company.funds.length>0" [funds]="company.funds" [hidden]="!company.fundsVisible">Loading Funds !!</fund>
+  </li>
+</ul>

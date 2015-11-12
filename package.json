@@ -1,0 +1,22 @@
+{
+  "name": "ng-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@reactivex/rxjs": "5.0.0-alpha.4",
+    "angular2": "2.0.0-alpha.45",
+    "reflect-metadata": "0.1.2",
+    "zone.js": "0.5.8",
+    "ts-loader": "^0.6.1"
+  },
+  "scripts": {
+    "start": "live-server --port=8080"
+  },
+  "author": "Pragyan",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^0.8.2",
+    "typescript": "^1.6.2"
+  }
+}

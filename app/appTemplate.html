@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<ul *ng-if="categories">
+  <li *ng-for="#category of categories" (click)='getCompanies(category)' style="cursor:pointer;">
+    {{category.name}}
+    <company [companies]="category.companies" [hidden]="!category.companiesVisible">Loading Companies !!</company>
+  </li>
+</ul>
